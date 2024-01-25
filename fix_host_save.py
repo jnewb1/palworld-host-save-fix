@@ -15,14 +15,8 @@ UESAVE_TYPE_MAPS = [
 
 def main():
     if len(sys.argv) < 5:
-        print('fix-host-save.py <uesave.exe> <save_path> <new_guid> <old_guid>')
+        print('fix_host_save.py <uesave.exe> <save_path> <new_guid> <old_guid>')
         exit(1)
-    
-    # Warn the user about potential data loss.
-    print('WARNING: Running this script WILL change your save files and could \
-potentially corrupt your data. It is HIGHLY recommended that you make a backup \
-of your save folder before continuing. Press enter if you would like to continue.')
-    input('> ')
     
     uesave_path = sys.argv[1]
     save_path = sys.argv[2]
